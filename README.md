@@ -1,1 +1,2 @@
 # Amd
+Asynchronous module definition
