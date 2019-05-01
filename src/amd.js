@@ -174,9 +174,9 @@ Handler.prototype = {
 			exports = this.module.callback.apply(this.module, imports);
 			if (exports == null) {
 				exports = this.module.exports;
-			}
-			if (exports == null) {
-				exports = this.exports;
+				if (exports == null) {
+					exports = this.exports;
+				}
 			}
 		} else {
 			exports = null;
